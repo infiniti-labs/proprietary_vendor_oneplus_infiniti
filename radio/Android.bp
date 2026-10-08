@@ -1,0 +1,5 @@
+filegroup {
+    name: "gbl_stock_abl",
+    srcs: ["abl.img"],
+    visibility: ["//external/gbl"],
+}
