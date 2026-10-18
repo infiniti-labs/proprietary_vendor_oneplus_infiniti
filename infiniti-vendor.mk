@@ -941,6 +941,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/init/init.camera_process.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_process.rc \
     vendor/oneplus/infiniti/proprietary/odm/etc/init/init.camera_upate.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.camera_upate.rc \
     vendor/oneplus/infiniti/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
+    vendor/oneplus/infiniti/proprietary/odm/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cryptoeng@1.0-service_FDE.rc \
     vendor/oneplus/infiniti/proprietary/odm/etc/libnfc-mtp-SN220.conf_24831:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_24831 \
     vendor/oneplus/infiniti/proprietary/odm/etc/libnfc-mtp-SN220.conf_24863:$(TARGET_COPY_OUT_ODM)/etc/libnfc-mtp-SN220.conf_24863 \
     vendor/oneplus/infiniti/proprietary/odm/etc/mixer_paths.xml:$(TARGET_COPY_OUT_ODM)/etc/mixer_paths.xml \
@@ -1027,6 +1028,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/antdtx.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/antdtx.b07 \
     vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/antdtx.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/antdtx.b08 \
     vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/antdtx.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/antdtx.mdt \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b00:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b00 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b01:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b01 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b02:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b02 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b03:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b03 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b04:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b04 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b05:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b05 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b06:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b06 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b07:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b07 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.b08:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.b08 \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/secure_ta/cryptoeng.mdt:$(TARGET_COPY_OUT_ODM)/firmware/secure_ta/cryptoeng.mdt \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_ODM)/firmware/tfa98xx.cnt \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/GloveDetect.tflite:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/GloveDetect.tflite \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libafe_s3910.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libafe_s3910.so \
@@ -1649,6 +1660,12 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     vendor.qti.hardware.camera.aon-service-impl \
     vendor.qti.hardware.camera.offlinecamera-service-impl \
+    lib_cryptoeng_api \
+    libqsee_keybox_ca \
+    vendor.oplus.hardware.cryptoeng-V1-ndk \
+    vendor.oplus.hardware.cryptoeng@1.0 \
+    vendor.oplus.hardware.fido.fido2ca-V1-ndk \
+    vendor.oplus.hardware.fido.fidoca-V1-ndk \
     libQnnHtpV81Skel.AIMotion \
     libQnnHtp.AIMotion \
     libQnnHtpV81Stub.AIMotion \
@@ -1878,11 +1895,13 @@ PRODUCT_PACKAGES += \
     dvs-aidl-service.xml \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
+    manifest_oplus_cryptoeng.xml \
     manifest_oplus_sendextcamcmd.xml \
     vendor.oplus.camera.aon-impl.xml \
     vendor.qti.camera.provider-service_64 \
     dvs-aidl-service \
-    vendor.oplus.hardware.cammidasservice-V1-service
+    vendor.oplus.hardware.cammidasservice-V1-service \
+    vendor.oplus.hardware.cryptoeng@1.0-service
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/temperature_profile/sys_thermal_control_config.xml:$(TARGET_COPY_OUT_ODM)/etc/temperature_profile/sys_thermal_control_config.xml \
