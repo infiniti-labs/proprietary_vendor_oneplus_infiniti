@@ -716,6 +716,16 @@
                 <!-- BT_FORMAT - LDAC -->
                 <graph_kv key="0xB5000000" value="0xB5000002"/>
             </keys_and_values>
+            <!-- #ifdef OPLUS_FEATURE_AUDIO_A2DP_OFFLOAD_LHDC -->
+            <keys_and_values CodecFormat="CODEC_TYPE_LHDC" AbrEnabled="TRUE,FALSE" Hostless="TRUE,FALSE">
+                <!-- DEVICERX - BT_RX -->
+                <graph_kv key="0xA2000000" value="0xA2000003"/>
+                <!-- BT_PROFILE - A2DP -->
+                <graph_kv key="0xB4000000" value="0xB4000002"/>
+                <!-- BT_FORMAT - LHDC -->
+                <graph_kv key="0xB5000000" value="0xB5001000"/>
+            </keys_and_values>
+            <!-- #endif /* OPLUS_FEATURE_AUDIO_A2DP_OFFLOAD_LHDC */ -->
             <!-- In APTX_AD ABR is always enabled -->
             <keys_and_values CodecFormat="CODEC_TYPE_APTX_AD" AbrEnabled="TRUE,FALSE" Hostless="TRUE,FALSE">
                 <!-- DEVICERX - BT_RX -->
@@ -830,7 +840,10 @@
         </device>
         <!-- BT A2DP IN Device -->
         <device id="PAL_DEVICE_IN_BLUETOOTH_A2DP">
-            <keys_and_values CodecFormat="CODEC_TYPE_LDAC,CODEC_TYPE_APTX_AD,CODEC_TYPE_AAC" Hostless="TRUE,FALSE">
+            <!-- #ifdef OPLUS_FEATURE_AUDIO_A2DP_OFFLOAD_LHDC -->
+            <!-- Add  CODEC_TYPE_LHDC-->
+            <!-- #endif /* OPLUS_FEATURE_AUDIO_A2DP_OFFLOAD_LHDC */ -->
+            <keys_and_values CodecFormat="CODEC_TYPE_LDAC,CODEC_TYPE_APTX_AD,CODEC_TYPE_AAC,CODEC_TYPE_LHDC" Hostless="TRUE,FALSE">
                 <!-- DEVICETX - BT_TX -->
                 <graph_kv key="0xA3000000" value="0xA3000002"/>
                </keys_and_values>
@@ -1381,6 +1394,12 @@
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_ISOLATION -->
                 <graph_kv key="0xAD000000" value="0xAD000108"/>
             </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="voip_enhance">
+                <!-- DEVICETX - HANDSETMIC -->
+                <graph_kv key="0xA3000000" value="0xA3000004"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_ENHANCE -->
+                <graph_kv key="0xAD000000" value="0xAD00010B"/>
+            </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_VOICE_UI"
                 DevicePPType="DUAL_HANDSET_MIC_48KHZ_16BIT_FFECNS">
                 <!-- DEVICETX - HANDSETMIC -->
@@ -1514,6 +1533,12 @@
                 <graph_kv key="0xA3000000" value="0xA3000001"/>
                 <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_ISOLATION -->
                 <graph_kv key="0xAD000000" value="0xAD000108"/>
+            </keys_and_values>
+            <keys_and_values StreamType="PAL_STREAM_VOIP_TX" CustomConfig="voip_enhance">
+                <!-- DEVICETX - SPEAKER_MIC -->
+                <graph_kv key="0xA3000000" value="0xA3000001"/>
+                <!-- DEVICEPP_TX - DEVICEPP_TX_VOIP_ENHANCE -->
+                <graph_kv key="0xAD000000" value="0xAD00010B"/>
             </keys_and_values>
             <keys_and_values StreamType="PAL_STREAM_LOOPBACK" SubType="PAL_STREAM_LOOPBACK_HFP_TX">
                 <!-- DEVICETX - SPEAKER_MIC -->

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <custom>
-	<version>2025091101</version>
+	<version>2026080401</version>
 	<fwk-version>v5.0.0</fwk-version>
 	<modules id="charger" enable="true" hint="support charger detect?">
 		<param name="default" type="bool" hint="charger off: 0, charger on: 1">
@@ -114,7 +114,7 @@
 			<value>0</value>
 		</param>
 		<param name="supports" type="[u32]" hint="">
-			<value>16,12,10,9,7,5</value>
+			<value>16,18,15,9,7,5</value>
 		</param>
 	</modules>
 
@@ -180,7 +180,7 @@
 	</modules>
 	<modules id="click_sensitive_support" enable="true" hint="">
 		<param name="default" type="bool" hint="">
-			<value>1</value>
+			<value>0</value>
 		</param>
 	</modules>
 	<modules id="frame_insert_support" enable="true" hint="">

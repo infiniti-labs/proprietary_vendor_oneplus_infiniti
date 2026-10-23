@@ -103,6 +103,9 @@
         <param key="oplus_fb_memory_leak_check" value="true"/>
         <!-- liuhaituo@MULTIMEDAI.AUDIODRIVER.HAL, 2025/07/30, add for oplus HFP feature -->
         <param key="OPLUS_HFP_SUPPORT" value="true"/>
+        <!-- liuhaituo@MULTIMEDAI.AUDIODRIVER.HAL, 2026/02/05, add for opve event callback -->
+        <param key="opve_event_callback_enable" value="true"/>
+        <param key="speaker_dyn_upd_ckv" value="true"/>
     </config_params>
     <config_volume>
         <use_volume_set_param>1</use_volume_set_param>
@@ -148,6 +151,8 @@
         <codec codec_format="CODEC_TYPE_AAC" codec_type="enc|dec" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_SBC" codec_type="enc|dec" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_LDAC" codec_type="enc" codec_library="lib_bt_bundle.so" />
+        <!-- Wenzheng.Quan@MULTIMEDIA.AUDIOSERVER.FRAMEWORKS, 2025/4/21, Add for a2dp offload LHDCV5 for qcom -->
+        <codec codec_format="CODEC_TYPE_LHDC" codec_type="enc" codec_library="lib_bt_bundle.so" />
         <codec codec_format="CODEC_TYPE_APTX" codec_type="enc" codec_library="lib_bt_aptx.so" />
         <codec codec_format="CODEC_TYPE_APTX_HD" codec_type="enc" codec_library="lib_bt_aptx.so" />
         <codec codec_format="CODEC_TYPE_APTX_AD" codec_type="enc" codec_library="lib_bt_aptx.so" />

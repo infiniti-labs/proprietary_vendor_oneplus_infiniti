@@ -13,7 +13,6 @@ GammaWK=1
 ReplaceOdf=1
 ReplaceIndex=6, 7
 TargetOdf=5
-GameColorEnhance=1
 ColorGamutExtension=1
 Frame=12
 Step=1

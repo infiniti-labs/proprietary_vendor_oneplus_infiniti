@@ -1,2 +1,1 @@
-OPAX_Version = OPAX_V4.2.1rc_AIDL
-
+OPAX_Version = OPAX_V4.2.2rc_AIDL_B

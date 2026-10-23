@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <algo>
-	<version>2025121601</version>
-	<algo-version>v2.0.10.186</algo-version>
+	<version>2026082701</version>
+	<algo-version>v2.0.11.201</algo-version>
 		<modules id="AlgoParam" enable="true" hint="">
 			<param name="prjId" type="u32" hint="">
 				<value>24831</value>
@@ -463,6 +463,22 @@
 				<value>1</value>
 				<range>0,10</range>
 			</param>
+			<param name="swipeVecOptEn" type="u32" hint="">
+				<value>0</value>
+				<range>0,10</range>
+			</param>
+			<param name="vecOptEn" type="u32" hint="">
+				<value>0</value>
+				<range>0,10</range>
+			</param>
+			<param name="globalDirConsisitencyEn" type="u32" hint="">
+				<value>0</value>
+				<range>0,10</range>
+			</param>
+			<param name="roulettelockStateOptEn" type="u32" hint="">
+				<value>0</value>
+				<range>0,10</range>
+			</param>
 		</modules>
 
 		<modules id="Lock" enable="true" hint="">
@@ -631,6 +647,10 @@
 			</param>
 			<param name="noiseMergeThd" type="u32" hint="">
 				<value>32</value>
+				<range>0,100</range>
+			</param>
+			<param name="EDGE_GRIP_MERGE_EN" type="u32" hint="">
+				<value>1</value>
 				<range>0,100</range>
 			</param>
 		</modules>
@@ -1069,6 +1089,9 @@
 			</param>
 			<param name="prevention,middle_bottom_yfsr_coupling_thd" type="u32" hint="" >
 				<value>90,60,5,10,0</value>
+			</param>
+			<param name="prevention,game_hot_zone_support" type="u32" hint="" >
+				<value>1,16</value>
 			</param>
 		</modules>
 		<modules id="Palm" enable="true" hint="">

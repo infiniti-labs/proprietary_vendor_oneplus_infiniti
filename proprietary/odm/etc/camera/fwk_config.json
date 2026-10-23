@@ -98,6 +98,9 @@
             "com.bilibili.app.in",
             "com.viber.voip"
         ],
+        "skip_video_prepare_first_request_package_list": [
+            "com.oplus.camera"
+        ],
         "disable_camera_shutter_sound_app_list": [
             "com.facebook.orca",
             "com.facebook.orca",
@@ -224,6 +227,12 @@
         176,  144
         ]
     },
+    "com.qualcomm.qti.telephonyservice": {
+        "isFreeDomEvictionPackge": true,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "1206x540"
+        ]
+    },
     "org.codeaurora.ims": {
         "isFreeDomEvictionPackge": true,
         "resolutionFilterForNotAddSizeAPI1": [
@@ -240,6 +249,7 @@
     "com.tencent.mm": {
         "app_enable_rio": true,
         "supportExplorerCameraMask": 3,
+        "wechat_fwkOmoji_support": true,
         "scan_zoom_value": 1.26,
         "scan_activity_name": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
         "app_disable_fb_evict": true,
@@ -262,6 +272,9 @@
             "com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI",
             "com.tencent.mm.ui.chatting.ChattingUI",
             ""
+        ],
+        "resolutionFilterForNotAddSizeAPI1": [
+            "1280x720"
         ]
     },
     "com.instagram.android": {
@@ -302,6 +315,12 @@
             "320x240"
         ]
     },
+    "com.uroad.liaoninggst": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "2560x1440",
+            "2520x1080"
+        ]
+    },
     "net.one97.paytm": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080
@@ -318,6 +337,10 @@
     "com.xiaomi.mitv.phone.tvassistant": {
         "previewSizeForAPI1Width": 3216,
         "previewSizeForAPI1Height": 1440
+    },
+    "com.zhiliaoapp.musically": {
+        "previewSizeForAPI1Width": 1280,
+        "previewSizeForAPI1Height": 720
     },
     "com.alibaba.android.rimet": {
         "previewSizeForAPI1Width": 1920,
@@ -436,6 +459,9 @@
             "com.whatsapp.qrcode.contactqr.ContactQrActivity",
             "com.whatsapp.statuscomposer.ConsolidatedStatusComposerActivity",
             "com.whatsapp.status.composer.ConsolidatedStatusComposerActivity"
+        ],
+        "resolutionFilterForNotAddSizeAPI2": [
+            "640x480"
         ]
     },
     "com.tencent.wework": {
@@ -533,6 +559,11 @@
             "2412x1080",
             "2400x1080",
             "2376x1080"
+        ]
+    },
+    "org.telegram.messenger": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "3136x1440"
         ]
     },
     "com.huatu.handheld_huatu": {

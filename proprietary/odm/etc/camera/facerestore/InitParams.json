@@ -11,7 +11,7 @@
             "supportFaceSizeRange":[200,4000],
             "faceSRBlurRange":[0, 100],
             "motionBlurRange":[35, 95],
-	        "isMotionBlurThreshold":[83, 88]
+	        "isMotionBlurThreshold":[100, 100]
         },
         "alphaFusionParams":{
             "sceneNum":4,

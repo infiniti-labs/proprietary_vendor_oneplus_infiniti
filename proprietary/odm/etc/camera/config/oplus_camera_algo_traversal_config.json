@@ -427,6 +427,55 @@
       },
       {
         "condition": {
+          "and": {
+            "eq": [
+              "motionCaptureEnable",
+              2
+            ],
+            "eq1": [
+              "cameraId",
+              1
+            ]
+          }
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "and": {
+            "eq": [
+              "motionCaptureEnable",
+              0
+            ],
+            "eq1": [
+              "cameraId",
+              1
+            ]
+          }
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
+          "and": {
+            "eq": [
+              "algoName",
+              "ALGO_FRONT_QUADCFA"
+            ],
+            "eq1": [
+              "bracketMode",
+              0
+            ],
+            "eq2": [
+              "cameraId",
+              1
+            ]
+          }
+        },
+        "filterResult": false
+      },
+      {
+        "condition": {
           "or": {
             "eq": [
               "isFromMainMenu",
