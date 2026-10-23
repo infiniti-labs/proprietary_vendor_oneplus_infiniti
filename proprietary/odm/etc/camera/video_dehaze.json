@@ -1,0 +1,37 @@
+{
+    "VideoDehaze":
+    {
+        "DUMP_ENABLE": 0,
+        "BYPASS_ENABLE": 0,
+        "25021":
+        {
+            "SkinProtectStr_Camera0": 0.85,
+            "SkinProtectStr_Camera1": 0.85,
+            "SkinProtectStr_Camera2": 0.85,
+            "SkinProtectStr_Camera3": 0.85,
+            "SkinProtectStr_Camera4": 0.65,
+            "DEHAZE_HDR":
+            {
+                "DEHAZE_Strength":[1.0,1.0],
+                "DEHAZE_VarLeft":[20.0,20.0],
+                "DEHAZE_VarRight":[70.0,45.0],
+                "DEHAZE_DarkLeft":[0.06,0.15],
+                "DEHAZE_DarkRight":[0.45,0.6],
+                "DEHAZE_LuxIndexThre":800.0,
+                "DEHAZE_DetectThre":0.25,
+                "DEHAZE_SyncFrames":40
+            },
+            "DEHAZE_SDR":
+            {
+                "DEHAZE_Strength":[1.0,1.0],
+                "DEHAZE_VarLeft":[20.0,20.0],
+                "DEHAZE_VarRight":[70.0,45.0],
+                "DEHAZE_DarkLeft":[0.06,0.15],
+                "DEHAZE_DarkRight":[0.45,0.6],
+                "DEHAZE_LuxIndexThre":800.0,
+                "DEHAZE_DetectThre":0.25,
+                "DEHAZE_SyncFrames":40
+            }
+        }
+    }
+}

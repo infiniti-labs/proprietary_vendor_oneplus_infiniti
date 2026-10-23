@@ -11685,6 +11685,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsvswdsp_skel",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/rfs/dsp/libsvswdsp_skel.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "rfs/dsp",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvpp_frc",
     owner: "oneplus",
     strip: {
@@ -11995,6 +12015,26 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libviltesrubwc_skel",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/aiframe/cdsp/signed/libviltesrubwc_skel.so",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    relative_install_path: "aiframe/cdsp/signed",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwechatsrubwc_skel",
     owner: "oneplus",
     strip: {
@@ -12131,6 +12171,31 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "aiframe",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaiboost_litert",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/aiframe/libaiboost_litert.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -12865,6 +12930,42 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "com.oplus.node.videodehaze",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/camera/components/com.oplus.node.videodehaze.so",
+            ],
+            shared_libs: [
+                "libcamera_metadata",
+                "libchilog",
+                "libcom.qti.chinodeutils",
+                "libutils",
+                "libcutils",
+                "libOpenCL",
+                "libhwconfigurationutil",
+                "libVideoDehaze",
+                "libcamxcommonutils",
+                "liboutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "camera/components",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "com.oplus.node.videomlft",
     owner: "oneplus",
     strip: {
@@ -13166,6 +13267,384 @@ cc_prebuilt_library_shared {
                 "libextensionlayer",
                 "libhwconfigurationutil",
                 "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.defer",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.defer.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "camera.oemlayer.logger",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.detect.v2",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.detect.v2.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "liboutils",
+                "camera.oemlayer.logger",
+                "libhcsfwk",
+                "libhcsutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.memcpy",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.memcpy.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "camera.oemlayer.logger",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.mlft",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.mlft.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "libOpenCL",
+                "libVideoMLFT",
+                "camera.oemlayer.logger",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.photoeis",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.photoeis.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "camera.oemlayer.logger",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.postproc.v2",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.postproc.v2.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "camera.oemlayer.logger",
+                "libosensenativeproxy_client",
+                "libz",
+                "libhcsfwk",
+                "libhcsutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.preview.v3",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.preview.v3.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "camera.oemlayer.logger",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.previewdefognode",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.previewdefognode.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "libOpenCL",
+                "libVideoDehaze",
+                "camera.oemlayer.logger",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.realt",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.realt.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "camera.oemlayer.logger",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.oplus.node.satfusion",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/com.oplus.node.satfusion.so",
+            ],
+            shared_libs: [
+                "camera.oemlayer.uilayer",
+                "libui",
+                "libcamera_metadata",
+                "libcutils",
+                "liblog",
+                "libhwconfigurationutil",
+                "libutils",
+                "libhardware",
+                "libbinder",
+                "libbinder_ndk",
+                "liboutils",
+                "libocompression",
+                "camera.oemlayer.logger",
+                "libOpenCL",
+                "libosensenativeproxy_client",
                 "libc++",
                 "libc",
                 "libm",
@@ -13927,6 +14406,34 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMetaSDK",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libMetaSDK.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -14711,6 +15218,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libVideoDehaze",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libVideoDehaze.so",
+            ],
+            shared_libs: [
+                "libtrace",
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libVideoFaceLUT",
     owner: "oneplus",
     strip: {
@@ -15060,6 +15594,61 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libc",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaiboost_vilte_qnn_sr",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libaiboost_vilte_qnn_sr.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libz",
+                "libc",
+                "libomp",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaiboost_vilte_sr",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libaiboost_vilte_sr.so",
+            ],
+            shared_libs: [
+                "libm",
+                "liblog",
+                "libdl",
+                "libz",
+                "libaiboost_vilte_qnn_sr",
+                "libviltesr_ubwc",
+                "libcdsprpc",
+                "libc",
+                "libomp",
             ],
         },
     },
@@ -17476,6 +18065,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libviltesr_ubwc",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libviltesr_ubwc.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwatermark_photo",
     owner: "oneplus",
     strip: {
@@ -17754,6 +18368,15 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
+    device_specific: true,
+}
+
+prebuilt_rfsa {
+    name: "odm_lib_rfsa_adsp_lhdc_enc_v1_0_so",
+    filename: "lhdc_enc_v1_0.so",
+    owner: "oneplus",
+    src: "proprietary/odm/lib/rfsa/adsp/lhdc_enc_v1_0.so",
+    relative_install_path: "adsp",
     device_specific: true,
 }
 

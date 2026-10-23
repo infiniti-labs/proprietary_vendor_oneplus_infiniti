@@ -178,6 +178,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/BodySeg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/BodySeg.json \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/DitherTabU8:$(TARGET_COPY_OUT_ODM)/etc/camera/DitherTabU8 \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusMultiDefault.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusMultiDefault.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSATPhoto.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSATPhoto.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSATPortrait.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSATPortrait.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSATVideo.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSATVideo.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSATVideoNonIPE.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSATVideoNonIPE.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSingleDefault.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSingleDefault.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSingleVideo.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSingleVideo.xml \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/OplusSingleVideoNonIPE.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/OplusSingleVideoNonIPE.xml \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/Owl_Algo_model/Owl_Algo_F_FHD.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Owl_Algo_model/Owl_Algo_F_UHD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/Owl_Algo_model/Owl_Algo_F_UHD.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Owl_Algo_model/Owl_Algo_M_FHD.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/Owl_Algo_model/Owl_Algo_M_FHD.bin \
@@ -189,17 +197,22 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Align_occlusion.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Align_occlusion.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Align_occlusion_snap.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Align_occlusion_snap.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Attribute_Face_RGB.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Attribute_Face_RGB.model \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Detect_AllAnimalBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_AllAnimalBodyFaceEye_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_AnimalBodyFaceEye_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Detect_BodyHead_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_BodyHead_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Detect_CommonFace_BGR.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_CommonFace_BGR.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_CommonFace_BGR_PZ.model \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Detect_Head_BGR.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Detect_Head_BGR.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Front_Align_occlusion.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Front_Align_occlusion.model \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Refine_Head.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_Head.model \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Refine_RectQuality_AllAnimalBodyFaceEye_BGR.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_AllAnimalBodyFaceEye_BGR.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_AnimalBodyFaceEye_BGR.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Refine_RectQuality_HumanBodyFaceEye_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_AnimalsBodyFaceEye_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Track_FaceRect20cls.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_FaceRect20cls.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Track_FaceRect20cls_snap.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_FaceRect20cls_snap.model \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Track_Head_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_Head_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/Vega_Track_HumanBody_Gray.model:$(TARGET_COPY_OUT_ODM)/etc/camera/Vega_Track_HumanBody_Gray.model \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aiboost_qnn_htp2.7.2_16382673562495086299.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aiboost_qnn_htp2.7.2_828413902960689361.bin \
@@ -765,6 +778,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/media_profiles.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/media_profiles.xml \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/800t_blues.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_blues.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/800t_hdr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_hdr.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/800t_master.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_master.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/800t_sdr.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/800t_sdr.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/ByYo3If \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/Cold.cube.rgb.bin \
@@ -811,9 +825,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji-cc-low.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-cc-low.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-eterna-v2.cube.rgb.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji-nc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-nc.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji-nc_master.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-nc_master.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji-proNegHi.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-proNegHi.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji-proNegHi_master.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji-proNegHi_master.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji.cube.rgb.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji_cc.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji_cc.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/fuji_cc_master.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/fuji_cc_master.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/gourmet.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gourmet.cube.rgb.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/gr.bw.rgba.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gr.bw.rgba.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/gr.hi.bw.rgba.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gr.hi.bw.rgba.bin \
@@ -861,6 +878,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/portra400_normal.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/portra400_normal.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/portra400_sdr_gen_a_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/portra400_sdr_gen_a_1.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/portra400_sdr_gen_d_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/portra400_sdr_gen_d_1.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_hdr_master_a_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_hdr_master_a_1.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_hdr_master_d_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_hdr_master_d_1.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_hdr_normal_a_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_hdr_normal_a_1.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_hdr_normal_d_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_hdr_normal_d_1.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_master.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_master.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_normal.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_normal.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_sdr_gen_a_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_sdr_gen_a_1.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/positive_sdr_gen_d_1.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/positive_sdr_gen_d_1.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/rJ5g5vPWG:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/rJ5g5vPWG \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/red-red.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/red-red.cube.rgb.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/meishe_lut/sky-blue.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/sky-blue.cube.rgb.bin \
@@ -925,6 +950,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_MLFT_Post_Tele.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_MLFT_Post_Tele.json \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_MLFT_Post_Ultra_Tele.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_MLFT_Post_Ultra_Tele.json \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_MLFT_Post_Wide.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_MLFT_Post_Wide.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_dehaze.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_dehaze.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_aiccm_main.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_aiccm_main.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_aiccm_tele.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_aiccm_tele.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_aiccm_wide.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_aiccm_wide.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_main.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_main.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_tele.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_tele.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_ultra_tele.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_ultra_tele.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/camera/video_facelut_wide.json:$(TARGET_COPY_OUT_ODM)/etc/camera/video_facelut_wide.json \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/wide_inv_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_inv_padding_mapxy_33x25.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/camera/wide_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_padding_mapxy_33x25.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/display/qdcm_calib_data_AA601_P_7_A0020_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_ODM)/etc/display/qdcm_calib_data_AA601_P_7_A0020_dsc_cmd_mode_panel.json \
@@ -969,6 +1002,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/sensor/config/oplus_rotation_detect.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/oplus_rotation_detect.json \
     vendor/oneplus/infiniti/proprietary/odm/etc/sensor/config/oplus_rotv.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/config/oplus_rotv.json \
     vendor/oneplus/infiniti/proprietary/odm/etc/sensor/sensor_config.json:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_config.json \
+    vendor/oneplus/infiniti/proprietary/odm/etc/sensor/sensor_type:$(TARGET_COPY_OUT_ODM)/etc/sensor/sensor_type \
     vendor/oneplus/infiniti/proprietary/odm/etc/spatializer/HP_MOVIE_ANALOG.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_ANALOG.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/spatializer/HP_MOVIE_BLUETOOTH.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_BLUETOOTH.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/spatializer/HP_MOVIE_DIGITAL.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/HP_MOVIE_DIGITAL.bin \
@@ -1003,6 +1037,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/batt_dchg_ctrl_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/batt_dchg_ctrl_config_table.txt \
     vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/batt_eis_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/batt_eis_config.txt \
     vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/batt_si_loss_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/batt_si_loss_config_table.txt \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/battery_damage_config.json:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/battery_damage_config.json \
     vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/bms_heating_config.txt \
     vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/charging_thermal_config_default.txt \
     vendor/oneplus/infiniti/proprietary/odm/firmware/fastchg/smart_chg_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/smart_chg_config_table.txt \
@@ -1031,6 +1066,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libafe_s3910.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libafe_s3910.so \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libafepanel_s3910_boe.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libafepanel_s3910_boe.so \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libafepanel_s3910_tianma.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libafepanel_s3910_tianma.so \
+    vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libaifilm.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libaifilm.so \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libpostalgo.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libpostalgo.so \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libpostalgo_symbol.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libpostalgo_symbol.so \
     vendor/oneplus/infiniti/proprietary/odm/firmware/tp/infiniti/libprealgo.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/infiniti/libprealgo.so \
@@ -1165,6 +1201,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.sensormodule.infinititele.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.infinititele.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.sensormodule.infinititele2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.infinititele2.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.sensormodule.infinitiultrawide.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.infinitiultrawide.bin \
+    vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.sensorsocmap.socid_map.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensorsocmap.socid_map.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.tuned.default.canoe.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.default.canoe.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.tuned.inffront.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.inffront.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/com.qti.tuned.infmain.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.infmain.bin \
@@ -1184,6 +1221,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/libpdCustomParam_Cam2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam2.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/libpdCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libpdCustomParam_Cam3.bin \
     vendor/oneplus/infiniti/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
+    vendor/oneplus/infiniti/proprietary/odm/lib64/face_ree_model/faceunlock.model:$(TARGET_COPY_OUT_ODM)/lib64/face_ree_model/faceunlock.model \
     vendor/oneplus/infiniti/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
     vendor/oneplus/infiniti/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/infiniti/proprietary/vendor/etc/acdbdata/canoe_mtp/acdb_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/canoe_mtp/acdb_cal.acdb \
@@ -1291,12 +1329,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/vendor/firmware/vpu40_2v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_unsigned.mbn \
     vendor/oneplus/infiniti/proprietary/vendor/firmware/vpu40_2v_v1.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1.mbn \
     vendor/oneplus/infiniti/proprietary/vendor/firmware/vpu40_2v_v1_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu40_2v_v1_unsigned.mbn \
+    vendor/oneplus/infiniti/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/bitmlconfig.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/camxfl115indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl115indices.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/camxfl300v1indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v1indices.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/camxfl300v2indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxfl300v2indices.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/camxflcustom300indices.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/camxflcustom300indices.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/chifdnodeconfig.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/chifdnodeconfig.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.netrani.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.skyros.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm7750.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8750.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8850.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.chi.featurecompatibilityspecification.sm8850.bin \
@@ -1311,7 +1354,16 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.sensormodule.qti_tpg2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.qti_tpg2.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.sensormodule.shinetech_ov32c4c.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.shinetech_ov32c4c.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.sensormodule.sony_imx888.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.sony_imx888.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.sensorsocmap.socid_map.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensorsocmap.socid_map.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.default.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.canoe.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_default.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx766.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_imx858.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_qtech_s5kjn5.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_qtech_s5kjn5.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_shinetech_ov32c.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_shinetech_ov32c.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_sony_imx888.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_sony_imx888.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_tpg.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_tpg.bin \
+    vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.molokai_tpg2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.molokai_tpg2.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx766.canoe.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_imx858.canoe.bin \
     vendor/oneplus/infiniti/proprietary/vendor/lib64/camera/com.qti.tuned.qtech_s5kjn5.canoe.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.qtech_s5kjn5.canoe.bin \
@@ -1644,6 +1696,7 @@ PRODUCT_PACKAGES += \
     libsvDescMatch_dsp \
     libsvdsp \
     libsvswdsp \
+    libsvswdsp_skel \
     libvpp_frc \
     libvpp_gfrc_networks \
     libvpp_svc_skel \
@@ -1655,12 +1708,14 @@ PRODUCT_PACKAGES += \
     libQnnSystem.AIMotion \
     libQnnHtpV81Skel.signed.aiframe \
     libaiboostubwc_skel \
+    libviltesrubwc_skel \
     libwechatsrubwc_skel \
     libQnnHtpV81Skel.unsigned.aiframe \
     libQnnHtp.aiframe \
     libQnnHtpPrepare.aiframe \
     libQnnHtpV81Stub.aiframe \
     libQnnSystem.aiframe \
+    libaiboost_litert \
     libaiboost_qnn_external_delegate.aiframe \
     libqcom_llm \
     libtransformer_lite \
@@ -1679,6 +1734,7 @@ PRODUCT_PACKAGES += \
     com.oplus.node.sstabphoto \
     com.oplus.node.sstabrealt \
     com.oplus.node.videoainr \
+    com.oplus.node.videodehaze \
     com.oplus.node.videomlft \
     com.oplus.stats.aec \
     com.oplus.stats.af \
@@ -1687,6 +1743,16 @@ PRODUCT_PACKAGES += \
     libcamxoemsatsoftwarefusionwrapper \
     libcamxoemsatwrapper \
     com.oplus.mcx.linearmapper \
+    com.oplus.node.defer \
+    com.oplus.node.detect.v2 \
+    com.oplus.node.memcpy \
+    com.oplus.node.mlft \
+    com.oplus.node.photoeis \
+    com.oplus.node.postproc.v2 \
+    com.oplus.node.preview.v3 \
+    com.oplus.node.previewdefognode \
+    com.oplus.node.realt \
+    com.oplus.node.satfusion \
     lib2DSlender \
     libAECParamParser \
     libAF \
@@ -1714,6 +1780,7 @@ PRODUCT_PACKAGES += \
     libImageWarpMask \
     libImplicitWatermark \
     libMNN \
+    libMetaSDK \
     libODNN \
     libOPAlgoCamAIBeautyBodyDetection \
     libOPAlgoCamAiBeautyFaceRetouchCn \
@@ -1744,6 +1811,7 @@ PRODUCT_PACKAGES += \
     libSuperRaw \
     libUpScale \
     libVideoAIProc \
+    libVideoDehaze \
     libVideoFaceLUT \
     libVideoMLFT \
     libWaterMark \
@@ -1758,6 +1826,8 @@ PRODUCT_PACKAGES += \
     libaiboost_sr \
     libaiboost_te \
     libaiboost_ubwc \
+    libaiboost_vilte_qnn_sr \
+    libaiboost_vilte_sr \
     libaiboost_wechat_qnn_sr \
     libaiboost_wechat_sr \
     libaisal \
@@ -1849,6 +1919,7 @@ PRODUCT_PACKAGES += \
     libtfa98xx \
     libtrace \
     libvega_common \
+    libviltesr_ubwc \
     libwatermark_photo \
     libwechatsr_ubwc \
     libwrapper_te \
@@ -1859,6 +1930,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera.aon-service-impl \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
+    odm_lib_rfsa_adsp_lhdc_enc_v1_0_so \
     odm_lib_rfsa_adsp_libCalculator_skel_so \
     odm_lib_rfsa_adsp_libQnnHtpV81_so \
     odm_lib_rfsa_adsp_libQnnHtpV81Skel_so \
