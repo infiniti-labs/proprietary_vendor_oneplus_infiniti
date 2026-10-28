@@ -1757,6 +1757,7 @@ PRODUCT_PACKAGES += \
     libAECParamParser \
     libAF \
     libAFParamParser \
+    camera.oemlayer.v2 \
     libAIMotion \
     libAlgoInterface \
     libAlgoProcess \
