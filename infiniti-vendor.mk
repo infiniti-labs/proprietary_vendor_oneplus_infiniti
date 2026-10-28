@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/infiniti
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/infiniti/proprietary/odm/etc/AIMotion/q_384_192_l1_p0_t0_genshin.bin:$(TARGET_COPY_OUT_ODM)/etc/AIMotion/q_384_192_l1_p0_t0_genshin.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/AIMotion/q_384_192_l2_p0_t0_genshin.bin:$(TARGET_COPY_OUT_ODM)/etc/AIMotion/q_384_192_l2_p0_t0_genshin.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/PanelChaplin/3D-Lut_Center_P3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Center_P3.txt \
     vendor/oneplus/infiniti/proprietary/odm/etc/PanelChaplin/3D-Lut_Center_sRGB.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Center_sRGB.txt \
     vendor/oneplus/infiniti/proprietary/odm/etc/PanelChaplin/3D-Lut_Enhance_P3.txt:$(TARGET_COPY_OUT_ODM)/etc/PanelChaplin/3D-Lut_Enhance_P3.txt \
@@ -1025,6 +1027,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/infiniti/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl7.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl7.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl8.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl8.bin \
     vendor/oneplus/infiniti/proprietary/odm/etc/spatializer/SPK_MOVIE_lvl9.bin:$(TARGET_COPY_OUT_ODM)/etc/spatializer/SPK_MOVIE_lvl9.bin \
+    vendor/oneplus/infiniti/proprietary/odm/etc/static_lut_bt2020_to_sRGB_mm.cube:$(TARGET_COPY_OUT_ODM)/etc/static_lut_bt2020_to_sRGB_mm.cube \
     vendor/oneplus/infiniti/proprietary/odm/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_ODM)/etc/usecaseKvManager.xml \
     vendor/oneplus/infiniti/proprietary/odm/etc/wifi/peach/bdwlan.b0a:$(TARGET_COPY_OUT_ODM)/etc/wifi/peach/bdwlan.b0a \
     vendor/oneplus/infiniti/proprietary/odm/etc/wifi/peach/bdwlan.b0e:$(TARGET_COPY_OUT_ODM)/etc/wifi/peach/bdwlan.b0e \
@@ -1622,6 +1625,7 @@ PRODUCT_PACKAGES += \
     libcolor-default \
     libcom.qti.chinodeutils \
     libdepthcomputation \
+    libdscaalgo \
     libeepromcutter \
     libhcsutils_vendor \
     libhdr10plus \
@@ -1753,11 +1757,11 @@ PRODUCT_PACKAGES += \
     com.oplus.node.previewdefognode \
     com.oplus.node.realt \
     com.oplus.node.satfusion \
+    camera.oemlayer.v2 \
     lib2DSlender \
     libAECParamParser \
     libAF \
     libAFParamParser \
-    camera.oemlayer.v2 \
     libAIMotion \
     libAlgoInterface \
     libAlgoProcess \
@@ -1798,6 +1802,7 @@ PRODUCT_PACKAGES += \
     libOPLUSMotionDetection \
     libOplusPDCore \
     libOpo_awb \
+    libPDParamParser \
     libQnnCpu \
     libQnnGpu \
     libQnnHtp \

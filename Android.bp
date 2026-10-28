@@ -9583,6 +9583,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdscaalgo",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libdscaalgo.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcamxcoreutils",
+                "libcamxmetadata",
+                "libcamxsocketserverutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamxcommonutils",
+                "libcamxods",
+                "libcamxasyncdumpmanager",
+                "libcamxsettingsmanager",
+                "libqti_vndfwk_detect",
+                "libcdsprpc",
+                "libopencv",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libeepromcutter",
     owner: "oneplus",
     strip: {
@@ -13658,47 +13699,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "lib2DSlender",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/lib2DSlender.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libGLESv3",
-                "libEGL",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libAECParamParser",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libAECParamParser.so",
-            ],
-            shared_libs: [
-                "libc++_shared",
-                "liblog",
-                "libdl",
-cc_prebuilt_library_shared {
     name: "camera.oemlayer.v2",
     owner: "oneplus",
     strip: {
@@ -13757,6 +13757,47 @@ cc_prebuilt_library_shared {
     device_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "lib2DSlender",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/lib2DSlender.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libGLESv3",
+                "libEGL",
+                "libdl",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libAECParamParser",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libAECParamParser.so",
+            ],
+            shared_libs: [
+                "libc++_shared",
+                "liblog",
+                "libdl",
                 "libc",
                 "libm",
             ],
@@ -14921,6 +14962,31 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libPDParamParser",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libPDParamParser.so",
+            ],
+            shared_libs: [
+                "libc++_shared",
+                "liblog",
+                "libdl",
+                "libc",
+                "libm",
             ],
         },
     },
