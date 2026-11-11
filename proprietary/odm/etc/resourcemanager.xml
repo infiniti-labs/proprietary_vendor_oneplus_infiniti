@@ -106,6 +106,7 @@
         <!-- liuhaituo@MULTIMEDAI.AUDIODRIVER.HAL, 2026/02/05, add for opve event callback -->
         <param key="opve_event_callback_enable" value="true"/>
         <param key="speaker_dyn_upd_ckv" value="true"/>
+        <param key="OPLUS_IMS_VOIP_CALL_SUPPORT" value="true"/>
     </config_params>
     <config_volume>
         <use_volume_set_param>1</use_volume_set_param>

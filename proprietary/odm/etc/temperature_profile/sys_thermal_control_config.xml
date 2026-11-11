@@ -738,7 +738,7 @@
                 <gear_config tempGear="13" cpu="12" gpu="6" />
                 <gear_config tempGear="14" restrict="0" />
             </com.antutu.ABenchMark-com.antutu.benchmark.full-com.ludashi.benchmark-com.ludashi.benchmark2-com.ludashi.benchmark.play>
-            <com.primatelabs.geekbench5.corporate-com.primatelabs.geekbench5-com.futuremark.pcmark.android.benchmark-net.kishonti.gfxbench.v50006.corporate-net.kishonti.gfxbench.gl.v50000.corporate-com.primatelabs.geekbench6.corporate-com.futuremark.dmandroid.application-com.andromeda.androbench2-com.glbenchmark.glbenchmark27-net.kishonti.gfxbench-com.primatelabs.geekbench7-com.primatelabs.geekbench6>
+            <com.primatelabs.parkdale-com.primatelabs.parkdale.corporate-com.primatelabs.geekbench5.corporate-com.primatelabs.geekbench5-com.futuremark.pcmark.android.benchmark-net.kishonti.gfxbench.v50006.corporate-net.kishonti.gfxbench.gl.v50000.corporate-com.primatelabs.geekbench6.corporate-com.futuremark.dmandroid.application-com.andromeda.androbench2-com.glbenchmark.glbenchmark27-net.kishonti.gfxbench-com.primatelabs.geekbench7-com.primatelabs.geekbench6>
                 <gear_config tempGear="3" cpu="-1" />
                 <gear_config tempGear="9" cpu="-1" brightness="1" />
                 <gear_config tempGear="10" cpu="-1" restrict="0" brightness="2" />
@@ -748,7 +748,7 @@
                 <gear_config tempGear="14" cpu="12" gpu="6" restrict="0" />
                 <gear_config tempGear="15" cpu="13" gpu="6" restrict="0" />
                 <gear_config tempGear="16" cpu="13" gpu="6" restrict="0" />
-            </com.primatelabs.geekbench5.corporate-com.primatelabs.geekbench5-com.futuremark.pcmark.android.benchmark-net.kishonti.gfxbench.v50006.corporate-net.kishonti.gfxbench.gl.v50000.corporate-com.primatelabs.geekbench6.corporate-com.futuremark.dmandroid.application-com.andromeda.androbench2-com.glbenchmark.glbenchmark27-net.kishonti.gfxbench-com.primatelabs.geekbench7-com.primatelabs.geekbench6>
+            </com.primatelabs.parkdale-com.primatelabs.parkdale.corporate-com.primatelabs.geekbench5.corporate-com.primatelabs.geekbench5-com.futuremark.pcmark.android.benchmark-net.kishonti.gfxbench.v50006.corporate-net.kishonti.gfxbench.gl.v50000.corporate-com.primatelabs.geekbench6.corporate-com.futuremark.dmandroid.application-com.andromeda.androbench2-com.glbenchmark.glbenchmark27-net.kishonti.gfxbench-com.primatelabs.geekbench7-com.primatelabs.geekbench6>
             <com.coloros.gallery3d>
                 <gear_config tempGear="2" cpu="0" brightness="15"/>
                 <gear_config tempGear="3" cpu="0" brightness="15" />

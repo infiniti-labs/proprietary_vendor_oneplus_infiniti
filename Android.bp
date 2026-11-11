@@ -5970,6 +5970,7 @@ cc_prebuilt_library_shared {
                 "libsensinghubapi",
                 "libsensinghubsession",
                 "vendor.oplus.hardware.camera_rfi-V1-service-impl",
+                "libolc_vnd",
                 "libsv",
                 "libsynx",
                 "libopluscameraframeboost",
